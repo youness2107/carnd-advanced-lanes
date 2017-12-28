@@ -149,7 +149,7 @@ The pipelines goes like this:
 
 The project video can be downloaded here
 
-[link to final video](https://drive.google.com/open?id=1UOkOsnSeVnEXAO0FDK2p5oK8MfUXKDMs)
+[link to final video](https://drive.google.com/open?id=11aaxAJ8gWPWUILX0EXdlBxqNkOR964EG)
 
 
 
