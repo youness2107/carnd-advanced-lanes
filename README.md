@@ -94,9 +94,9 @@ For curvature I used the following code  (similar to the one in the lesson)
         xm_per_pix = 3.7/700 # meteres per pixel in x dimension
         fit_cr_l = np.polyfit(self.ly*ym_per_pix, self.lx*xm_per_pix, 2)
         fit_cr_r = np.polyfit(self.ry*ym_per_pix, self.rx*xm_per_pix, 2)
-        self.l_curvature = ((1 + (2*fit_cr_l[0]*np.max(self.ly) + fit_cr_l[1])**2)**1.5) \
+        self.l_curvature = ((1 + (2*fit_cr_l[0]*np.max(self.ly*ym_per_pix) + fit_cr_l[1])**2)**1.5) \
                                      /np.absolute(2*fit_cr_l[0])
-        self.r_curvature = ((1 + (2*fit_cr_r[0]*np.max(self.ry) + fit_cr_r[1])**2)**1.5) \
+        self.r_curvature = ((1 + (2*fit_cr_r[0]*np.max(self.ry*ym_per_pix) + fit_cr_r[1])**2)**1.5) \
                                      /np.absolute(2*fit_cr_r[0])    
         return
 ```
